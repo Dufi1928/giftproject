@@ -11,15 +11,7 @@ use App\Repository\GiftsRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: GiftsRepository::class)]
-#[ApiResource(
-    operations: [
-        new GetCollection(),
-        new Put(),
-        new Post(),
-        new Delete(),
-        new Post(),
-    ]
-)]
+#[ApiResource]
 class Gifts
 {
     #[ORM\Id]
