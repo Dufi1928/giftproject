@@ -7,6 +7,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./back:/var/www/symfony
+    image: dufi1928/gift_project_back:latest
 
   nginx:
     image: nginx:alpine
@@ -24,3 +25,4 @@ services:
       dockerfile: Dockerfile
     ports:
       - "80:80"
+    image: dufi1928/gift_project_front:latest
