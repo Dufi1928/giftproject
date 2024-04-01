@@ -43,6 +43,9 @@ jobs:
       - name: Verify SSH Connection
         run: ssh -o StrictHostKeyChecking=no ${{ secrets.USERNAME }}@${{ secrets.HOST }} "echo 'SSH Connection Successful'"
 
+      - name: Copy docker-compose.yml to server
+        run: scp -o StrictHostKeyChecking=no docker-compose.yml ${{ secrets.USERNAME }}@${{ secrets.HOST }}:/var/www/gift_project/docker-compose.yml
+
       - name: Deploy to Docker Swarm
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.USERNAME }}@${{ secrets.HOST }} << EOF
