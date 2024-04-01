@@ -1,4 +1,4 @@
-name: CI/CD Pipeline for giftproject
+name: CI/CD Pipeline for gift_project
 
 on:
   push:
@@ -44,6 +44,6 @@ jobs:
       - name: Deploy to Docker Swarm
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.USERNAME }}@${{ secrets.HOST }} << EOF
-            cd /var/www/giftproject
-            docker stack deploy --compose-file docker-compose.yml giftproject
+            cd /var/www/gift_project
+            docker stack deploy --compose-file docker-compose.yml gift_project
           EOF
