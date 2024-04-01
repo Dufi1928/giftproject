@@ -1,0 +1,63 @@
+.gifts-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gifts-form input[type="text"],
+.gifts-form textarea,
+.gifts-form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.gifts-form textarea {
+    height: 100px;
+}
+
+.gifts-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.gifts-form button:hover {
+    background-color: #45a049;
+}
+
+.gift-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.gift-item {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.gift-item h3 {
+    margin-top: 0;
+}
+
+.gift-item p {
+    margin: 5px 0;
+}
+
+.label-expiration-date {
+    display: block;
+    margin-top: 20px;
+}

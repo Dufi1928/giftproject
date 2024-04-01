@@ -1,0 +1,32 @@
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.gift-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.gift-item h3 {
+    margin-top: 0;
+}
+
+.edit-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}

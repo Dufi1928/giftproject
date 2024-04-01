@@ -1,0 +1,52 @@
+.manage-gift-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.manage-gift-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.manage-gift-form label {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.manage-gift-form input[type="text"],
+.manage-gift-form input[type="number"],
+.manage-gift-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Makes sure padding doesn't increase the width */
+}
+
+.manage-gift-form textarea {
+    height: 100px; /* Sets a fixed height for the textarea */
+}
+
+.manage-gift-form input[type="checkbox"] {
+    margin-top: 5px;
+}
+
+.manage-gift-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.manage-gift-form button:hover {
+    background-color: #0056b3;
+}
