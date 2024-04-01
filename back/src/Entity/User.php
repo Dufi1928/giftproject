@@ -13,15 +13,7 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: UserRepository::class)]
-#[ApiResource(
-    operations: [
-        new GetCollection(),
-        new Put(),
-        new Post(),
-        new Delete(),
-        new Post(),
-    ]
-)]
+#[ApiResource]
 #[ORM\Table(name: '`user`')]
 class User
 {

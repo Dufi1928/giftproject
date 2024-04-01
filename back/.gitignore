@@ -7,4 +7,6 @@
 /public/bundles/
 /var/
 /vendor/
+../.idea
+.idea/vcs.xml
 ###< symfony/framework-bundle ###
